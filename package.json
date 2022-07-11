@@ -1,9 +1,12 @@
 {
   "name": "gif-expert-app",
+  "homepage": "https://arturoquiros.github.io/CICD-Demo/",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d docs",
     "build": "vite build",
     "preview": "vite preview",
     "test": "jest --watchAll"
